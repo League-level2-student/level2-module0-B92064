@@ -22,9 +22,8 @@ public class _00_ArrayCheatSheet {
 		String[]arr2 = new String[50];
 		//7. use a for loop to make every value of the integer array a random number
 		for(int i = 0; i<50;i++) {
-			Random r = new Random();
-			int e = r.nextInt(i);
-			
+			Random r = new Random(i);
+			//arr[r.nextInt(i)];
 			
 		}
 		//8. without printing the entire array, print only the smallest number in the array
