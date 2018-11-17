@@ -1,8 +1,15 @@
 package arrays;
 
+import java.awt.Robot;
+
 public class _01_RobotRace {
 	//1. make a main method
-
+public static void main(String[] args) {
+	Robot[] robot = new Robot[5];
+	for(int i = 0; i <5; i++) {
+		//robot[i] = ;
+	}
+}
 	//2. create an array of 5 robots.
 
 	//3. use a for loop to initialize the robots.
