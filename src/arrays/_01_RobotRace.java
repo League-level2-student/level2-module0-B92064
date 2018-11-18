@@ -1,20 +1,52 @@
 package arrays;
 
-import java.awt.Robot;
+import java.util.Random;
+
+import org.jointheleague.graphical.robot.Robot;
 
 public class _01_RobotRace {
+	static boolean isRacing = true;
 	//1. make a main method
 public static void main(String[] args) {
 	Robot[] robot = new Robot[5];
 	for(int i = 0; i <5; i++) {
-		//robot[i] = ;
+		robot[i] = new Robot();
+		robot[i].setX(100+100*i);
+		robot[i].setY(500);
+		robot[i].setSpeed(25);
 	}
+	Random r = new Random();
+	while(isRacing == true) {
+	for(int i = 0; i <5; i++) {
+		int rr = r.nextInt(50);
+		robot[i].move(rr);
+		if(robot[i].getY() <=25) {
+			isRacing =false;
+		}
+		if(robot[i].getY() <= 25) {
+			robot[i].moveTo(300, 300);
+			robot[i].penDown();
+			isRacing = false;
+			robot[i].turn(160);
+			robot[i].move(100);
+			robot[i].turn(-120);
+			robot[i].move(100);
+			robot[i].turn(120);
+			robot[i].move(100);
+			robot[i].turn(-120);
+			robot[i].move(100);
+		}
+		
+	}
+	}
+	
 }
 	//2. create an array of 5 robots.
 
 	//3. use a for loop to initialize the robots.
 
-		//4. make each robot start at the bottom of the screen, side by side, facing up
+		//4. make each robot start at the bottom of the screen,
+//side by side, facing up
 
 	//5. use another for loop to iterate through the array and make each robot move 
 	//   a random amount less than 50.

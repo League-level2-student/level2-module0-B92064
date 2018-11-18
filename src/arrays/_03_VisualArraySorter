@@ -1,8 +1,9 @@
 /* Paste the code into a new Processing sketch and complete the steps. */
 
 //1. create an array of ints. don't initialize it yet.
-
+int i[];
 void setup() {
+  size(100, 100);
   //2. set the size of your window
   //  if you are using Processing 3, you cannot use variables
   //  because the developers don't know how programming is supposed to work.
